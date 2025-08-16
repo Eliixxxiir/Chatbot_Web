@@ -1,0 +1,125 @@
+.auth-container {
+  width: 350px;
+  margin: 100px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.2); /* Soft Glass Effect */
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #222; /* Dark Text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.auth-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #222; /* Heading Dark */
+  letter-spacing: 1px;
+}
+
+.auth-container p {
+  color: #333; /* Subtexts (e.g., OTP Info) */
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.85); /* Solid Light Background */
+  color: #222;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.auth-container input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.auth-container input:focus {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.03);
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.auth-container button:hover {
+  background: linear-gradient(135deg, #0056b3, #003f7f);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+}
+
+/* OTP Inputs Styling */
+.otp-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.otp-inputs input {
+  width: 40px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #222;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.otp-inputs input:focus {
+  background: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+
+.otp-inputs input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* Spinner Loader */
+.spinner {
+  border: 6px solid rgba(0, 0, 0, 0.1);
+  border-top: 6px solid #007bff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 50px auto;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .auth-container {
+    width: 90%;
+    padding: 30px 20px;
+  }
+}

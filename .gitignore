@@ -1,0 +1,38 @@
+# Ignore virtual environments
+
+backend/node_modules/
+frontend/node_modules/
+.venv/
+env/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore logs and outputs
+*.log
+output/
+*.tmp
+
+# Ignore data files
+*.pdf
+*.csv
+*.zip
+*.h5
+
+# Ignore Python bytecode files  
+*.py[cod]
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Jupyter Notebook metadata
+*.ipynb_checkpoints
+
+# Ignore Jupyter Notebook outputs
+*.ipynb

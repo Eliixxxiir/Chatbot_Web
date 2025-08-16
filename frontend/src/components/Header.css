@@ -1,0 +1,48 @@
+.govt-header {
+  position: relative;
+  width: 100%;
+  height: 220px; /* Adjust height as needed */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Background Image */
+.header-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  z-index: 0;
+}
+
+/* Text & Logo Overlay */
+.logo-text {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text visibility */
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* Government Logo */
+.govt-logo {
+  width: 60px;
+  height: auto;
+  margin-right: 15px;
+}
+
+/* Text Style */
+.logo-text div {
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: bold;
+}
