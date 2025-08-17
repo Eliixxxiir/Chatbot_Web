@@ -5,3 +5,4 @@ python-dotenv
 sentence-transformers
 passlib[bcrypt]
 PyJWT
+email-validator
