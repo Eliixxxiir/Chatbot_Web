@@ -1,0 +1,9 @@
+fastapi[all]
+uvicorn
+pymongo
+python-dotenv
+sentence-transformers
+pandas
+scipy
+passlib[bcrypt]
+PyJWT
