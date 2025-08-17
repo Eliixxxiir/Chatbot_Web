@@ -1,9 +1,7 @@
-fastapi[all]
+fastapi
 uvicorn
 pymongo
 python-dotenv
 sentence-transformers
-pandas
-scipy
 passlib[bcrypt]
 PyJWT
